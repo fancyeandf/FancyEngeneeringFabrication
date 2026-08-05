@@ -1,18 +1,8 @@
 import Link from "next/link";
-import { ArrowRight, Fence, DoorOpen, Grid3x3, Blinds, Warehouse, Waves, Building2, Flame } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { services } from "@/data/services";
-
-const icons = {
-  "automatic-gates": Fence,
-  "doors-windows": DoorOpen,
-  grills: Grid3x3,
-  shutters: Blinds,
-  "sheds-trusses": Warehouse,
-  "flexible-gates": Waves,
-  "structural-engineering": Building2,
-  "welding-project-management": Flame,
-};
 
 export default function ServicesGrid({ limit, showHeading = true, showCta = true }) {
   const list = limit ? services.slice(0, limit) : services;
@@ -32,36 +22,33 @@ export default function ServicesGrid({ limit, showHeading = true, showCta = true
           />
         )}
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {list.map((service, index) => {
-            const Icon = icons[service.slug];
-            return (
-              <div
-                key={service.slug}
-                className="card-glow group relative flex flex-col rounded-2xl border border-gold-dark/15 bg-surface/50 backdrop-blur-md p-7 transition-all duration-500 hover:-translate-y-2 hover:border-gold/30 hover:shadow-[0_20px_40px_-15px_rgba(212,175,55,0.15)] overflow-hidden"
-              >
-                {/* Diagonal glassmorphic sheen sweep */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-[1200ms] pointer-events-none" />
-
-                {/* Decorative back-blob glow on hover */}
-                <div className="absolute -top-12 -right-12 h-24 w-24 rounded-full bg-gold/5 blur-2xl group-hover:bg-gold/15 transition-colors duration-500 pointer-events-none" />
-
-                {/* Oversized watermark icon */}
-                <Icon
-                  className="pointer-events-none absolute -bottom-6 -right-6 h-32 w-32 text-gold/4 group-hover:text-gold/8 transition-colors duration-500"
-                  strokeWidth={1}
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {list.map((service, index) => (
+            <div
+              key={service.slug}
+              className="card-glow group relative flex flex-col rounded-2xl border border-gold-dark/15 bg-surface/50 backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:border-gold/30 hover:shadow-[0_20px_40px_-15px_rgba(212,175,55,0.15)] overflow-hidden"
+            >
+              {/* Photo header */}
+              <div className="relative aspect-4/3 overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                <div className="absolute inset-0 bg-linear-to-t from-surface/90 via-surface/10 to-transparent" />
 
                 {/* Index badge */}
-                <span className="absolute top-5 right-5 font-display text-xs font-semibold tracking-widest text-gold-dark/40 group-hover:text-gold/60 transition-colors duration-300">
+                <span className="absolute top-4 right-4 flex h-8 w-8 items-center justify-center rounded-full border border-gold/25 bg-background/60 backdrop-blur-md font-display text-xs font-semibold tracking-widest text-gold-light">
                   {String(index + 1).padStart(2, "0")}
                 </span>
+              </div>
 
-                {/* Modern Double Ring Icon Frame */}
-                <div className="relative h-14 w-14 rounded-xl border border-gold/20 flex items-center justify-center text-gold mb-6 transition-all duration-500 group-hover:border-gold group-hover:bg-gradient-to-br group-hover:from-gold group-hover:to-gold-light group-hover:text-[#12100a] group-hover:shadow-[0_0_15px_rgba(212,175,55,0.4)]">
-                  <div className="absolute inset-1 rounded-lg border border-gold/10 group-hover:border-transparent transition-colors" />
-                  <Icon className="h-6 w-6 transition-transform duration-500 group-hover:scale-110" strokeWidth={1.5} />
-                </div>
+              {/* Content */}
+              <div className="relative flex flex-1 flex-col p-7">
+                {/* Diagonal glassmorphic sheen sweep */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 pointer-events-none" />
 
                 <h3 className="relative font-display text-xl sm:text-2xl font-bold text-foreground group-hover:text-gold-light transition-colors duration-300">
                   {service.title}
@@ -91,8 +78,8 @@ export default function ServicesGrid({ limit, showHeading = true, showCta = true
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
         {showCta && (

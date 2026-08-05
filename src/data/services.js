@@ -5,6 +5,7 @@ export const services = [
     description:
       "Motorised sliding and swing gates engineered for smooth, reliable, everyday operation at homes and commercial sites.",
     highlights: ["Motorised Sliding", "Swing Gate Systems", "Remote Access"],
+    image: "/services/automatic-gates.png",
   },
   {
     slug: "doors-windows",
@@ -12,6 +13,7 @@ export const services = [
     description:
       "Custom steel and metal doors and windows, fabricated to precise measurements for lasting strength and a clean finish.",
     highlights: ["Custom Fabrication", "Steel & Metal", "Precise Fit"],
+    image: "/services/doors-windows.png",
   },
   {
     slug: "grills",
@@ -19,6 +21,7 @@ export const services = [
     description:
       "Security and decorative grills for windows, balconies and staircases, balancing safety with a refined look.",
     highlights: ["Security Grills", "Decorative Designs", "Balcony & Staircase"],
+    image: "/services/grills.png",
   },
   {
     slug: "shutters",
@@ -26,6 +29,7 @@ export const services = [
     description:
       "Rolling and collapsible shutters built for shops, warehouses and garages, engineered for durability and security.",
     highlights: ["Rolling Shutters", "Collapsible Shutters", "Shop & Warehouse"],
+    image: "/services/shutters.png",
   },
   {
     slug: "sheds-trusses",
@@ -33,6 +37,7 @@ export const services = [
     description:
       "Industrial sheds and roofing trusses engineered for structural integrity, spanning large commercial and factory spaces.",
     highlights: ["Industrial Sheds", "Roofing Trusses", "Large-Span Structures"],
+    image: "/services/sheds-trusses.png",
   },
   {
     slug: "flexible-gates",
@@ -40,6 +45,7 @@ export const services = [
     description:
       "Space-saving flexible and folding gates for compact entrances, driveways and boundary walls.",
     highlights: ["Space-Saving Design", "Folding Mechanism", "Driveway Ready"],
+    image: "/services/flexible-gates.png",
   },
   {
     slug: "structural-engineering",
@@ -47,6 +53,7 @@ export const services = [
     description:
       "End-to-end structural design and consultation, ensuring every fabrication is sound, safe and built to last.",
     highlights: ["Structural Design", "Site Consultation", "Safety Compliance"],
+    image: "/services/structural-engineering.png",
   },
   {
     slug: "welding-project-management",
@@ -54,5 +61,6 @@ export const services = [
     description:
       "Skilled welding solutions and hands-on project management, delivering custom engineering works on schedule.",
     highlights: ["Skilled Welding", "On-Site Execution", "Timely Delivery"],
+    image: "/services/welding-project-management.png",
   },
 ];

@@ -38,7 +38,7 @@ export default function Hero() {
     // clipped/hidden content — on unusually short windows. The content is
     // split into a flexible centered block (heading/copy/CTAs) and fixed
     // blocks (stats/badges/dots/scroll-cue) so it always fits the budget.
-    <section className="relative -mt-25 min-h-[65svh] sm:min-h-svh flex flex-col overflow-hidden bg-grid">
+    <section className="relative -mt-21 min-h-[82svh] sm:min-h-svh flex flex-col overflow-hidden bg-grid">
       {/* 1. Bottom Layer: Banner Slides */}
       <div className="absolute inset-0 z-0">
         {slides.map((slide, i) => (
@@ -62,14 +62,14 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* 2. Middle Layer: Translucent Overlay & Gradients */}
-      <div className="absolute inset-0 bg-black/30 z-10 pointer-events-none">
+      {/* 2. Middle Layer: High Visibility Translucent Overlay & Gradients */}
+      <div className="absolute inset-0 bg-black/15 z-10 pointer-events-none">
         {/* gentle vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_85%_75%_at_50%_40%,transparent,rgba(8,8,10,0.6))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_85%_75%_at_50%_40%,transparent,rgba(8,8,10,0.35))]" />
         {/* legibility gradients */}
-        <div className="absolute inset-0 bg-linear-to-t from-background via-background/40 to-transparent" />
-        <div className="absolute inset-0 bg-linear-to-b from-background/60 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-noise opacity-20" />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/20 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-b from-background/35 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-noise opacity-15" />
       </div>
 
       {/* Decorative background glow orbs — z-10 */}
@@ -79,14 +79,14 @@ export default function Hero() {
       {/* 3. Top Layer: Text content block (z-20) */}
       <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-5 sm:px-8 pt-28 pb-8 mx-auto w-full max-w-5xl">
         <span 
-          className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-gold-light/20 bg-background/60 backdrop-blur-md px-5 py-2 text-[0.7rem] sm:text-xs tracking-[0.35em] uppercase text-gold-light shadow-[0_4px_12px_rgba(0,0,0,0.5)]"
+          className="animate-fade-up inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-gold-light/20 bg-background/60 backdrop-blur-md px-3.5 py-1.5 sm:px-5 sm:py-2 text-[0.62rem] xs:text-[0.7rem] sm:text-xs tracking-[0.2em] sm:tracking-[0.35em] uppercase text-gold-light shadow-[0_4px_12px_rgba(0,0,0,0.5)] whitespace-nowrap"
         >
           <Sparkles className="h-3.5 w-3.5 text-gold" />
           {site.tagline}
         </span>
 
         <h1 
-          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.15] text-balance text-gold-gradient drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] pb-2"
+          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.15] text-balance text-gold-gradient drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] pb-2"
         >
           Engineering Strength.
           <br />
@@ -94,7 +94,7 @@ export default function Hero() {
         </h1>
 
         <p 
-          className="animate-fade-up mt-5 max-w-2xl text-sm sm:text-base md:text-lg text-white leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] hidden sm:block"
+          className="animate-fade-up mt-5 max-w-2xl text-sm sm:text-base md:text-lg text-white leading-relaxed drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.45)] hidden sm:block"
         >
           {site.description}
         </p>

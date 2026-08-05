@@ -58,16 +58,14 @@ export default function VideoGrid({ videos }) {
               </span>
               <video
                 src={video.src}
+                autoPlay
+                loop
                 muted
                 playsInline
                 preload="metadata"
                 className="w-full h-full bg-black object-cover opacity-90 transition-transform duration-700 ease-out group-hover:scale-105"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black/60 via-black/10 to-black/20 transition-colors duration-300 group-hover:from-black/70">
-                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-gold/90 text-[#12100a] shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-transform duration-300 group-hover:scale-110">
-                  <Play className="h-6 w-6 translate-x-0.5" fill="currentColor" strokeWidth={0} />
-                </span>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/25 opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
             </div>
           </button>
         ))}
@@ -127,6 +125,7 @@ export default function VideoGrid({ videos }) {
               src={videos[activeIndex].src}
               controls
               autoPlay
+              muted
               playsInline
               className="h-full w-full bg-black"
             >
