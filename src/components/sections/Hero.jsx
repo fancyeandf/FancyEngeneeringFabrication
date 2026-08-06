@@ -64,59 +64,54 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* 2. Middle Layer: High Visibility Translucent Overlay & Gradients */}
-      <div className="absolute inset-0 bg-black/15 z-10 pointer-events-none">
-        {/* gentle vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_85%_75%_at_50%_40%,transparent,rgba(8,8,10,0.35))]" />
-        {/* legibility gradients */}
-        <div className="absolute inset-0 bg-linear-to-t from-background via-background/20 to-transparent" />
-        <div className="absolute inset-0 bg-linear-to-b from-background/35 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-noise opacity-15" />
+      {/* 2. Middle Layer: Subtle Translucent Overlay for Text Contrast */}
+      <div className="absolute inset-0 bg-black/18 z-10 pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_85%_75%_at_50%_40%,transparent,rgba(8,8,10,0.2))]" />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/10 to-transparent" />
+        <div className="absolute inset-0 bg-noise opacity-5" />
       </div>
-
-      {/* Decorative background glow orbs — z-10 */}
-      <div className="absolute top-1/4 left-1/4 h-80 w-80 bg-gold/5 rounded-full glow-orb z-10 pointer-events-none" />
-      <div className="absolute bottom-1/3 right-1/4 h-96 w-96 bg-gold-dark/5 rounded-full glow-orb z-10 pointer-events-none" />
 
       {/* 3. Top Layer: Text content block (z-20) */}
       <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-5 sm:px-8 pt-28 pb-8 mx-auto w-full max-w-5xl">
-        <span 
+        <span
           className="animate-fade-up inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-gold-light/20 bg-background/60 backdrop-blur-md px-3.5 py-1.5 sm:px-5 sm:py-2 text-[0.62rem] xs:text-[0.7rem] sm:text-xs tracking-[0.2em] sm:tracking-[0.35em] uppercase text-gold-light shadow-[0_4px_12px_rgba(0,0,0,0.5)] whitespace-nowrap"
         >
           <Sparkles className="h-3.5 w-3.5 text-gold" />
           {site.tagline}
         </span>
 
-        <h1 
-          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.15] text-balance text-gold-gradient drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] pb-2"
+        <h1
+          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] text-balance text-gold-gradient drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)] pb-2"
         >
           Premium Engineering &amp; Fabrication Services in Hyderabad
         </h1>
 
-        <p 
-          className="animate-fade-up mt-5 max-w-3xl text-sm sm:text-base md:text-lg text-white/95 leading-relaxed drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.45)]"
+        <p
+          className="animate-fade-up mt-5 max-w-3xl text-sm sm:text-base md:text-lg text-white font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]"
         >
-          We specialize in <span className="text-gold-light font-medium">Sheds Fabrication, Industrial Shed Fabrication, Structural Work, Automatic Gates, Brass &amp; Aluminium Railings, Spiral Staircases, and Custom Fabrication</span> with quality workmanship, competitive pricing, and on-time delivery.
+          We specialize in <span className="text-gold-light font-bold">Sheds Fabrication, Industrial Shed Fabrication, Structural Work, Automatic Gates, Brass &amp; Aluminium Railings, Spiral Staircases, and Custom Fabrication</span> with quality workmanship, competitive pricing, and on-time delivery.
         </p>
 
         <div
-          className="animate-fade-up mt-6 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4"
+          className="animate-fade-up mt-8 flex flex-row flex-wrap items-center justify-center gap-4"
           style={{ animationDelay: "0.15s" }}
         >
-          <Button href={`tel:+91${primaryPhone}`} className="group shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:scale-[1.02]">
-            <PhoneCall className="h-4 w-4" />
+          <Button 
+            href={`tel:+91${primaryPhone}`} 
+            className="group hover:scale-[1.02] bg-gradient-to-r from-gold-dark via-gold to-gold-light text-[#12100a] font-bold border-none px-7 py-3.5 shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_4px_24px_rgba(212,175,55,0.45)] transition-all duration-300"
+          >
+            <PhoneCall className="h-4.5 w-4.5" />
             Call Now
           </Button>
-          <Button 
+          <a 
             href={`https://wa.me/91${primaryPhone}`}
             target="_blank"
             rel="noopener noreferrer"
-            variant="outline" 
-            className="hover:scale-[1.02] backdrop-blur-xs flex items-center gap-2 border-emerald-500/30 hover:border-emerald-500 hover:bg-emerald-500/10 text-emerald-400 hover:text-emerald-300"
+            className="hover:scale-[1.02] inline-flex items-center justify-center gap-2 rounded-full border-2 border-emerald-500/50 bg-emerald-950/20 backdrop-blur-xs text-emerald-400 hover:text-black hover:bg-emerald-500 hover:border-transparent font-bold px-7 py-3.5 shadow-[0_0_15px_rgba(16,185,129,0.15)] hover:shadow-[0_0_25px_rgba(16,185,129,0.45)] transition-all duration-300 text-sm tracking-wide"
           >
-            <FaWhatsapp className="h-4.5 w-4.5" />
+            <FaWhatsapp className="h-5 w-5" />
             WhatsApp
-          </Button>
+          </a>
         </div>
       </div>
 
