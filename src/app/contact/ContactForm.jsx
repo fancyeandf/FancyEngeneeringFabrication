@@ -117,7 +117,7 @@ export default function ContactForm() {
                   type="text"
                   id="name"
                   required
-                  placeholder="e.g. Irfan Khan"
+                  placeholder="e.g. Irfan Syed"
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="w-full bg-background/40 hover:bg-background/60 hover:border-gold/30 focus:bg-background/80 border border-gold/15 focus:border-gold focus:ring-1 focus:ring-gold text-foreground placeholder:text-muted/40 rounded-xl pl-10 pr-4 py-3 text-sm transition-all duration-300 outline-hidden focus:shadow-[0_0_12px_rgba(212,175,55,0.15)]"

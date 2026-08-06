@@ -22,7 +22,7 @@ import TeamShowcase from "@/components/sections/TeamShowcase";
 export const metadata = {
   title: `About Us | ${site.name}`,
   description:
-    "Fancy Engineering and Fabrication is a Hyderabad-based structural engineering and fabrication company with 25+ years of experience delivering automatic gates, doors, grills, shutters, sheds and custom structural work.",
+    "Fancy Engineering and Fabrication is a Hyderabad-based company with 25+ years of experience delivering industrial sheds, warehouse sheds, automatic gates, railings, structural steel work, roofing, and PEB structures.",
 };
 
 const stats = [

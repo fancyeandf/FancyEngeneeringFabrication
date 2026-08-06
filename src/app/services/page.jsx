@@ -9,7 +9,7 @@ import { Wrench, Award, Timer } from "lucide-react";
 export const metadata = {
   title: `Services | ${site.name}`,
   description:
-    "Automatic gates, doors, windows, grills, shutters, sheds, trusses, flexible gates and structural engineering — Fancy Engineering and Fabrication, Hyderabad.",
+    "Industrial sheds, warehouse sheds, automatic gates, railings, barricading, structural steel work, roofing, PEB structures, function halls, and brass railings by Fancy Engineering, Hyderabad.",
 };
 
 const stats = [

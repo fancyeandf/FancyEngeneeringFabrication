@@ -3,7 +3,7 @@ export const site = {
   shortName: "Fancy",
   tagline: "Engineering & Fabrication Works",
   description:
-    "Trusted structural engineering and fabrication in Hyderabad — automatic gates, doors, windows, grills, shutters, sheds, trusses and flexible gates, built with quality and precision.",
+    "We specialize in Sheds Fabrication, Industrial Shed Fabrication, Structural Work, Automatic Gates, Brass & Aluminium Railings, Spiral Staircases, and Custom Fabrication in Hyderabad with quality workmanship, competitive pricing, and on-time delivery.",
   founderName: "Irfan Syed",
   founderTitle: "Founder & Managing Director",
   email: "fancyeandf@gmail.com",
@@ -23,6 +23,7 @@ export const site = {
     facebook: "https://www.facebook.com/share/r/14dj6AvRYMV/",
     linkedin: "https://www.linkedin.com/in/fancy-e-and-f-5282aa40b",
     x: "https://x.com/fancyeandf",
+    youtube: "https://www.youtube.com/@FANCYFabrications",
   },
 };
 

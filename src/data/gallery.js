@@ -1,5 +1,5 @@
-const imageCount = 56;
-const videoCount = 44;
+const imageCount = 135;
+const videoCount = 45;
 
 export const galleryImages = Array.from({ length: imageCount }, (_, i) => {
   const n = String(i + 1).padStart(2, "0");

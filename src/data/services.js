@@ -1,66 +1,82 @@
 export const services = [
   {
-    slug: "automatic-gates",
-    title: "Automatic Gates",
+    slug: "industrial-shed",
+    title: "Industrial Shed Fabrication",
     description:
-      "Motorised sliding and swing gates engineered for smooth, reliable, everyday operation at homes and commercial sites.",
-    highlights: ["Motorised Sliding", "Swing Gate Systems", "Remote Access"],
+      "Heavy-duty industrial sheds designed and fabricated for factories, manufacturing plants, and heavy industries.",
+    highlights: ["Heavy-Duty Steel", "Large-Span Design", "Weather-Resistant"],
+    image: "/gallery/images/project-04.jpg",
+  },
+  {
+    slug: "warehouse-sheds",
+    title: "Warehouse Sheds Fabrication",
+    description:
+      "Spacious and durable warehouse sheds tailored for storage, logistics, and inventory management.",
+    highlights: ["Optimized Storage Space", "High Durability", "Custom Height & Span"],
+    image: "/gallery/images/project-10.jpg",
+  },
+  {
+    slug: "automatic-gates",
+    title: "Automatic Gates Fabrication",
+    description:
+      "Motorised sliding and swing gates engineered for smooth, reliable, and secure automated entry control.",
+    highlights: ["Motorised sliding/swing", "Remote & App Control", "High-Security Access"],
     image: "/services/automatic-gates.png",
   },
   {
-    slug: "doors-windows",
-    title: "Doors & Windows",
+    slug: "railings-spiral",
+    title: "Railings & Spiral Staircases",
     description:
-      "Custom steel and metal doors and windows, fabricated to precise measurements for lasting strength and a clean finish.",
-    highlights: ["Custom Fabrication", "Steel & Metal", "Precise Fit"],
-    image: "/services/doors-windows.png",
+      "Custom-designed modern metal railings, balustrades, and space-saving spiral staircases.",
+    highlights: ["Spiral Staircases", "Balcony & Stair Railings", "Custom Modern Designs"],
+    image: "/gallery/images/project-25.jpg",
   },
   {
-    slug: "grills",
-    title: "Grills",
+    slug: "barricading",
+    title: "Barricading / Barcating",
     description:
-      "Security and decorative grills for windows, balconies and staircases, balancing safety with a refined look.",
-    highlights: ["Security Grills", "Decorative Designs", "Balcony & Staircase"],
-    image: "/services/grills.png",
+      "Robust safety barricades, safety fencing, boundary panels, and metal partitioning systems.",
+    highlights: ["Road & Site Safety", "Crowd Control Barriers", "Heavy-Duty Construction"],
+    image: "/services/barricading.png",
   },
   {
-    slug: "shutters",
-    title: "Shutters",
+    slug: "structural-steel-work",
+    title: "Structural Steel Work",
     description:
-      "Rolling and collapsible shutters built for shops, warehouses and garages, engineered for durability and security.",
-    highlights: ["Rolling Shutters", "Collapsible Shutters", "Shop & Warehouse"],
-    image: "/services/shutters.png",
+      "High-precision structural steel fabrication and erection for multi-story buildings, framing, and platforms.",
+    highlights: ["Heavy Framing", "I-Beam & Column Erection", "Precision Engineering"],
+    image: "/gallery/images/project-50.jpg",
   },
   {
-    slug: "sheds-trusses",
-    title: "Sheds & Trusses",
+    slug: "roofing-shed",
+    title: "Roofing Sheds",
     description:
-      "Industrial sheds and roofing trusses engineered for structural integrity, spanning large commercial and factory spaces.",
-    highlights: ["Industrial Sheds", "Roofing Trusses", "Large-Span Structures"],
-    image: "/services/sheds-trusses.png",
+      "Durable and weather-proof metal roofing, poly-carbonate sheet sheds, and terrace roof installations.",
+    highlights: ["Metal & Polycarbonate", "Leak-Proof Installation", "Terrace & Parking Sheds"],
+    image: "/gallery/images/project-15.jpg",
   },
   {
-    slug: "flexible-gates",
-    title: "Flexible Gates",
+    slug: "peb-structure",
+    title: "PEB Structure (Pre-Engineered Buildings)",
     description:
-      "Space-saving flexible and folding gates for compact entrances, driveways and boundary walls.",
-    highlights: ["Space-Saving Design", "Folding Mechanism", "Driveway Ready"],
-    image: "/services/flexible-gates.png",
-  },
-  {
-    slug: "structural-engineering",
-    title: "Structural Engineering",
-    description:
-      "End-to-end structural design and consultation, ensuring every fabrication is sound, safe and built to last.",
-    highlights: ["Structural Design", "Site Consultation", "Safety Compliance"],
+      "State-of-the-art pre-engineered steel buildings, offering fast erection, cost-efficiency, and scalability.",
+    highlights: ["Fast-Track Construction", "Cost-Effective Design", "Highly Scalable"],
     image: "/services/structural-engineering.png",
   },
   {
-    slug: "welding-project-management",
-    title: "Welding & Project Management",
+    slug: "function-hall-sheds",
+    title: "Function Hall Sheds",
     description:
-      "Skilled welding solutions and hands-on project management, delivering custom engineering works on schedule.",
-    highlights: ["Skilled Welding", "On-Site Execution", "Timely Delivery"],
-    image: "/services/welding-project-management.png",
+      "Aesthetically pleasing, large-span metal sheds customized for banquet and function halls.",
+    highlights: ["Aesthetic Columns", "Wide-Span Open Spaces", "Acoustic & Thermal Insulation"],
+    image: "/gallery/images/project-57.jpg",
+  },
+  {
+    slug: "brass-railings",
+    title: "Brass Railings",
+    description:
+      "Premium luxury brass railings and luxury fittings for high-end residential and commercial staircases.",
+    highlights: ["Premium Brass Finish", "Polished & Durable", "Luxury Architectural Designs"],
+    image: "/services/brass-railings.png",
   },
 ];

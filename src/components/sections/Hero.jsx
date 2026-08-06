@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowUpRight, PhoneCall, Sparkles, Award, Users, Wrench, ShieldCheck } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import Button from "@/components/ui/Button";
 import CountUp from "@/components/ui/CountUp";
 import { site } from "@/data/site";
@@ -23,6 +24,7 @@ const SLIDE_DURATION_MS = 6000;
 export default function Hero() {
   const slides = heroSlides;
   const [active, setActive] = useState(0);
+  const primaryPhone = site.phones[0].replace(/\s/g, "");
 
   useEffect(() => {
     if (slides.length < 2) return;
@@ -86,30 +88,34 @@ export default function Hero() {
         </span>
 
         <h1 
-          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.15] text-balance text-gold-gradient drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] pb-2"
+          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.15] text-balance text-gold-gradient drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] pb-2"
         >
-          Engineering Strength.
-          <br />
-          Fabricating Trust.
+          Premium Engineering &amp; Fabrication Services in Hyderabad
         </h1>
 
         <p 
-          className="animate-fade-up mt-5 max-w-2xl text-sm sm:text-base md:text-lg text-white leading-relaxed drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.45)] hidden sm:block"
+          className="animate-fade-up mt-5 max-w-3xl text-sm sm:text-base md:text-lg text-white/95 leading-relaxed drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.45)]"
         >
-          {site.description}
+          We specialize in <span className="text-gold-light font-medium">Sheds Fabrication, Industrial Shed Fabrication, Structural Work, Automatic Gates, Brass &amp; Aluminium Railings, Spiral Staircases, and Custom Fabrication</span> with quality workmanship, competitive pricing, and on-time delivery.
         </p>
 
         <div
           className="animate-fade-up mt-6 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4"
           style={{ animationDelay: "0.15s" }}
         >
-          <Button href="/projects" className="group shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:scale-[1.02]">
-            View Our Work
-            <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </Button>
-          <Button href="/contact" variant="outline" className="hover:scale-[1.02] backdrop-blur-xs">
+          <Button href={`tel:+91${primaryPhone}`} className="group shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:scale-[1.02]">
             <PhoneCall className="h-4 w-4" />
-            Get a Quote
+            Call Now
+          </Button>
+          <Button 
+            href={`https://wa.me/91${primaryPhone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline" 
+            className="hover:scale-[1.02] backdrop-blur-xs flex items-center gap-2 border-emerald-500/30 hover:border-emerald-500 hover:bg-emerald-500/10 text-emerald-400 hover:text-emerald-300"
+          >
+            <FaWhatsapp className="h-4.5 w-4.5" />
+            WhatsApp
           </Button>
         </div>
       </div>

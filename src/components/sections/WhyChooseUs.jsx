@@ -1,30 +1,36 @@
-import { Award, Compass, CheckCircle2, ShieldCheck } from "lucide-react";
+import { Users, ShieldCheck, Clock, BadgeIndianRupee, Headphones } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 const points = [
   {
-    title: "25+ Years of Expertise",
+    title: "Experienced Team",
     description:
-      "Decades of hands-on structural engineering and fabrication experience behind every project.",
-    icon: Award,
+      "Skilled and certified fabricators with decades of experience handling complex engineering projects.",
+    icon: Users,
   },
   {
-    title: "Precision Engineering",
+    title: "Quality Materials",
     description:
-      "Every gate, grill and structure is designed and fabricated to exact specifications.",
-    icon: Compass,
+      "We source premium-grade steel and raw materials to ensure maximum structural strength and durability.",
+    icon: ShieldCheck,
   },
   {
     title: "On-Time Delivery",
     description:
-      "Reliable project timelines with transparent communication from start to finish.",
-    icon: CheckCircle2,
+      "Highly planned execution and commitment to project timelines, delivering on schedule.",
+    icon: Clock,
   },
   {
-    title: "Built to Last",
+    title: "Competitive Pricing",
     description:
-      "Quality materials and skilled welding for durable, long-lasting fabrication work.",
-    icon: ShieldCheck,
+      "Transparent quotes with zero hidden charges, offering the best value for your fabrication budget.",
+    icon: BadgeIndianRupee,
+  },
+  {
+    title: "24/7 Support",
+    description:
+      "Always available for customer inquiries, maintenance assistance, and immediate project updates.",
+    icon: Headphones,
   },
 ];
 
@@ -37,12 +43,12 @@ export default function WhyChooseUs() {
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
-          eyebrow="Why Fancy"
+          eyebrow="Why Choose Us"
           title="Built On Quality &amp; Trust"
           description="What sets our engineering and fabrication work apart, project after project."
         />
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
           {points.map((point) => (
             <div
               key={point.title}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import OrnateDivider from "@/components/ui/OrnateDivider";
 import BackToTopButton from "@/components/layout/BackToTopButton";
 import { navLinks, site } from "@/data/site";
@@ -12,6 +12,7 @@ const socialIcons = {
   facebook: <FaFacebookF className="h-4 w-4" />,
   linkedin: <FaLinkedinIn className="h-4 w-4" />,
   x: <FaXTwitter className="h-4 w-4" />,
+  youtube: <FaYoutube className="h-4 w-4" />,
 };
 
 const featuredServices = services.slice(0, 5);
@@ -155,8 +156,12 @@ export default function Footer() {
       <div className="relative">
         <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
-          <span className="text-center sm:text-left">
-            © {new Date().getFullYear()} {site.name}. All rights reserved.
+          <span className="text-center sm:text-left text-sm font-medium tracking-wide text-muted/80 transition-colors duration-300">
+            © {new Date().getFullYear()}{" "}
+            <span className="text-gold-light font-semibold hover:text-gold transition-colors duration-300">
+              {site.name}
+            </span>
+            . All rights reserved.
           </span>
 
           <div className="flex items-center gap-5">

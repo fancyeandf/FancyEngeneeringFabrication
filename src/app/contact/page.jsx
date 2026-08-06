@@ -10,7 +10,7 @@ import {
   Wrench,
   Navigation,
 } from "lucide-react";
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaXTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import CountUp from "@/components/ui/CountUp";
@@ -48,6 +48,12 @@ const socialLabels = {
     icon: <FaXTwitter className="h-4.5 w-4.5" />,
     baseClass: "bg-white/5 text-[#e5e5e5] border-white/10",
     hoverClass: "hover:bg-foreground hover:text-background hover:border-foreground hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+  },
+  youtube: {
+    label: "YouTube",
+    icon: <FaYoutube className="h-4.5 w-4.5" />,
+    baseClass: "bg-[#ff0000]/8 text-[#ff8b8b] border-[#ff0000]/20",
+    hoverClass: "hover:bg-[#ff0000] hover:text-white hover:border-transparent hover:shadow-[0_0_15px_rgba(255,0,0,0.45)]"
   },
 };
 

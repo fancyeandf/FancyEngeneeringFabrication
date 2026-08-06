@@ -53,11 +53,7 @@ export default function AboutTeaser() {
             {site.founderTitle}
           </p>
           <p className="mt-6 text-base sm:text-lg text-muted/95 leading-relaxed">
-            With nearly 25 years of experience in structural engineering and
-            fabrication, Irfan Syed has built a reputation for quality,
-            integrity, and timely project execution across India. His
-            expertise spans structural engineering, steel and industrial
-            fabrication, welding solutions, and custom engineering works.
+            We specialize in <strong>Sheds Fabrication, Industrial Shed Fabrication, Structural Work, Automatic Gates, Brass &amp; Aluminium Railings, Spiral Staircases, and Custom Fabrication</strong>. With nearly 25 years of industry experience, {site.founderName} and the team deliver premium quality workmanship, competitive pricing, and on-time execution.
           </p>
           <div className="mt-6 border-l-2 border-gold-dark pl-4 py-2.5 bg-gold/5 rounded-r-lg max-w-xl">
             <p className="font-display text-base sm:text-[1.05rem] text-gold-light/95 italic leading-relaxed">

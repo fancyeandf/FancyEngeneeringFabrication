@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ServicesMarquee />
-      <ServicesGrid limit={4} />
+      <ServicesGrid limit={3} />
       <div className="section-divider" />
       <WhyChooseUs />
       <div className="section-divider" />
