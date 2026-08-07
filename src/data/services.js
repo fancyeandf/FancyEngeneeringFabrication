@@ -29,7 +29,7 @@ export const services = [
     description:
       "Custom-designed modern metal railings, balustrades, and space-saving spiral staircases.",
     highlights: ["Spiral Staircases", "Balcony & Stair Railings", "Custom Modern Designs"],
-    image: "/gallery/images/project-25.jpg",
+    image: "/gallery/images/project-08.jpg",
   },
   {
     slug: "barricading",

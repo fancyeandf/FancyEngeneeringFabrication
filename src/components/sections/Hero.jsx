@@ -15,9 +15,11 @@ const stats = [
 ];
 
 const heroSlides = [
+  { id: "hero-0", src: "/hero/hero-0.png", alt: "Fancy Engineering and Fabrication showcase" },
   { id: "hero-1", src: "/hero/hero-1.png", alt: "Fancy Engineering and Fabrication showcase" },
   { id: "hero-2", src: "/hero/hero-2.png", alt: "Fancy Engineering and Fabrication showcase" },
   { id: "hero-3", src: "/hero/hero-3.png", alt: "Fancy Engineering and Fabrication showcase" },
+  { id: "hero-4", src: "/hero/hero-4.png", alt: "Fancy Engineering and Fabrication showcase" },
 ];
 const SLIDE_DURATION_MS = 6000;
 
@@ -40,7 +42,7 @@ export default function Hero() {
     // clipped/hidden content — on unusually short windows. The content is
     // split into a flexible centered block (heading/copy/CTAs) and fixed
     // blocks (stats/badges/dots/scroll-cue) so it always fits the budget.
-    <section className="relative -mt-21 min-h-[82svh] sm:min-h-svh flex flex-col overflow-hidden bg-grid">
+    <section className="relative -mt-21 min-h-[75svh] sm:min-h-svh flex flex-col overflow-hidden bg-grid">
       {/* 1. Bottom Layer: Banner Slides */}
       <div className="absolute inset-0 z-0">
         {slides.map((slide, i) => (
@@ -55,7 +57,7 @@ export default function Hero() {
                 alt={slide.alt}
                 fill
                 priority={i === 0}
-                className="object-cover scale-105"
+                className="object-cover object-center scale-100 sm:scale-105"
                 style={{ filter: "saturate(1.1) contrast(1.05) brightness(1)" }}
                 sizes="100vw"
               />
@@ -89,7 +91,7 @@ export default function Hero() {
         <p
           className="animate-fade-up mt-5 max-w-3xl text-sm sm:text-base md:text-lg text-white font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]"
         >
-          We specialize in <span className="text-gold-light font-bold">Sheds Fabrication, Industrial Shed Fabrication, Structural Work, Automatic Gates, Brass &amp; Aluminium Railings, Spiral Staircases, and Custom Fabrication</span> with quality workmanship, competitive pricing, and on-time delivery.
+          We specialize in <span className="text-gold-light font-bold">Warehouse Sheds Fabrication, Industrial Shed Fabrication, Sheds Fabrication, Structural Work, Automatic Gates, Brass &amp; Aluminium Railings, Spiral Staircases, and Custom Fabrication</span> with quality workmanship, competitive pricing, and on-time delivery.
         </p>
 
         <div
