@@ -12,6 +12,7 @@ const manrope = Manrope({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.fancyengineering.in"),
   title: `${site.name} | ${site.tagline}`,
   description: site.description,
   keywords: [
@@ -30,12 +31,30 @@ export const metadata = {
     "metal fabricators in Hyderabad",
     "welding services Hyderabad",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: `${site.name} | ${site.tagline}`,
     description: site.description,
     siteName: site.name,
     locale: "en_IN",
     type: "website",
+    url: "https://www.fancyengineering.in",
+    images: [
+      {
+        url: "/brand/logo.png",
+        width: 1200,
+        height: 630,
+        alt: `${site.name} Logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} | ${site.tagline}`,
+    description: site.description,
+    images: ["/brand/logo.png"],
   },
 };
 

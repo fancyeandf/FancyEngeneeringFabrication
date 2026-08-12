@@ -76,14 +76,14 @@ export default function Hero() {
       {/* 3. Top Layer: Text content block (z-20) */}
       <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-5 sm:px-8 pt-28 pb-8 mx-auto w-full max-w-5xl">
         <span
-          className="animate-fade-up inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-gold-light/20 bg-background/60 backdrop-blur-md px-3.5 py-1.5 sm:px-5 sm:py-2 text-[0.62rem] xs:text-[0.7rem] sm:text-xs tracking-[0.2em] sm:tracking-[0.35em] uppercase text-gold-light shadow-[0_4px_12px_rgba(0,0,0,0.5)] whitespace-nowrap"
+          className="animate-fade-up inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-gold-light/20 bg-background/60 backdrop-blur-md px-3.5 py-1.5 sm:px-5 sm:py-2 text-[0.62rem] xs:text-[0.7rem] sm:text-xs font-bold tracking-[0.2em] sm:tracking-[0.35em] uppercase text-gold-light shadow-[0_4px_12px_rgba(0,0,0,0.5)] whitespace-nowrap"
         >
           <Sparkles className="h-3.5 w-3.5 text-gold" />
           {site.tagline}
         </span>
 
         <h1
-          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] text-balance text-gold-gradient drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)] pb-2"
+          className="animate-fade-up mt-5 font-display text-[1.75rem] xs:text-[2.25rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] text-balance text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)] pb-2"
         >
           Premium Engineering &amp; Fabrication Services in Hyderabad
         </h1>
@@ -98,14 +98,14 @@ export default function Hero() {
           className="animate-fade-up mt-8 flex flex-row flex-wrap items-center justify-center gap-4"
           style={{ animationDelay: "0.15s" }}
         >
-          <Button 
-            href={`tel:+91${primaryPhone}`} 
+          <Button
+            href={`tel:+91${primaryPhone}`}
             className="group hover:scale-[1.02] bg-gradient-to-r from-gold-dark via-gold to-gold-light text-[#12100a] font-bold border-none px-7 py-3.5 shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_4px_24px_rgba(212,175,55,0.45)] transition-all duration-300"
           >
             <PhoneCall className="h-4.5 w-4.5" />
             Call Now
           </Button>
-          <a 
+          <a
             href={`https://wa.me/91${primaryPhone}`}
             target="_blank"
             rel="noopener noreferrer"
