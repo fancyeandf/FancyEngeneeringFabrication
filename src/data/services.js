@@ -1,19 +1,19 @@
 export const services = [
   {
-    slug: "industrial-shed",
-    title: "Industrial Shed Fabrication",
-    description:
-      "Heavy-duty industrial sheds designed and fabricated for factories, manufacturing plants, and heavy industries.",
-    highlights: ["Heavy-Duty Steel", "Large-Span Design", "Weather-Resistant"],
-    image: "/gallery/images/project-04.jpg",
-  },
-  {
     slug: "warehouse-sheds",
     title: "Warehouse Sheds Fabrication",
     description:
       "Spacious and durable warehouse sheds tailored for storage, logistics, and inventory management.",
     highlights: ["Optimized Storage Space", "High Durability", "Custom Height & Span"],
     image: "/gallery/images/project-10.jpg",
+  },
+  {
+    slug: "industrial-shed",
+    title: "Industrial Shed Fabrication",
+    description:
+      "Heavy-duty industrial sheds designed and fabricated for factories, manufacturing plants, and heavy industries.",
+    highlights: ["Heavy-Duty Steel", "Large-Span Design", "Weather-Resistant"],
+    image: "/gallery/images/project-04.jpg",
   },
   {
     slug: "automatic-gates",
